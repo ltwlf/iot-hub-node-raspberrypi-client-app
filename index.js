@@ -113,7 +113,9 @@ function initClient(connectionStringParam, credentialPath) {
   }
 
   // set up gpio
+
   gpio.setup(config.LEDPin, gpio.DIR_OUT);
+  gpio.setup(18, gpio.DIR_OUT);
   
   messageProcessor = new MessageProcessor(config);
 
